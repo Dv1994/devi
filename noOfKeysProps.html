@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Count the Number of Keys in an Object Using for...in
+        const student = {
+            name: 'devi',
+            id: 14752319,
+            course: 'UI'  
+        };
+        // let count = 0;
+        // for(let key in student){
+        //     count++;
+        // }
+        // console.log(count)
+        
+        // Count the Number of Key in an Object Using Object.key()
+        const result = Object.keys(student).length;
+        console.log(result);
+    </script>
+</body>
+</html>

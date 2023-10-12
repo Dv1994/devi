@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Example 1: Split Array Using slice()
+        // function splitIntoChunks(arr, chunk) {
+        //     for(let i = 0; i < arr.length; i += chunk){
+        //         let tempArray;
+        //         tempArray = arr.slice(i, i+chunk);
+        //         console.log(tempArray);
+        //     }
+
+        // }
+
+        // Example 2: Split Array Using splice()
+        function splitIntoChunks(arr, chunk){
+            while(arr.length > 0){
+                let tempArray;
+                tempArray = arr.splice(0, chunk);
+                console.log(tempArray)
+            }
+        }
+        const array = [1, 2, 3, 4, 5, 6, 7, 8];
+        const chunk = 3;
+        splitIntoChunks(array, chunk);
+
+        
+
+    </script>
+</body>
+</html>

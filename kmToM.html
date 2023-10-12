@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilometers to Miles</title>
+</head>
+<body>
+    <script>
+        //Method-1
+        function kmTom(kilometers){
+            const mTokm = 0.62137;
+            return kilometers * mTokm;
+        }
+        const kilometers = prompt("enter no of kms");
+        const miles = kmTom(kilometers);
+        console.log( kilometers + "kms is equal to "+ miles.toFixed(2) + "m.")
+
+
+        //Method-2
+        const kms = prompt("enter no.of kms");
+        const factor = 0.62137;
+        const mile = (kms * factor).toFixed(2);
+        console.log(`${kms} kms is equal to ${mile} m.`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Using toUpperCase()
+        const string1 = prompt("enter a string1");
+        const string2 = prompt("enter a string2");
+        const result = string1.toUpperCase() === string2.toUpperCase();
+        if(result){
+            console.log("two strings are similar..")
+        }else{
+            console.log("not similar");
+        }
+
+        // JS String Comparison Using RegEx
+
+        const str1 = prompt("enter a string");
+        const str2 = prompt("enter a string");
+        const pattern = new RegExp(str1, 'gi');
+        const result1 = pattern.test(str2);
+        if(result1){
+            console.log("two strings are similar..");
+        }else{
+            console.log("not similar");
+        }
+    </script>
+</body>
+</html>

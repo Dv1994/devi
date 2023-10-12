@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Using indexOf() and push()
+        function getUniqueArr(arr){
+            let uniqueArr = [];
+            for(let i of arr){
+                if(uniqueArr.indexOf(i) === -1){
+                    uniqueArr.push(i);
+                }
+            }
+            console.log(uniqueArr);
+        }
+        const array = [1, 2, 3, 2, 3];
+        getUniqueArr(array);
+
+
+        // Using Set
+        function getUnique(arr1){
+            let getUnique = [...new Set(arr1)];
+            console.log(getUnique);
+        }
+
+        const array1 = [1, 2, 3, 2, 3];
+        getUnique(array1);
+    </script>
+    
+</body>
+</html>

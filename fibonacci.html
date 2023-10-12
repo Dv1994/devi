@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = parseInt(prompt("enter a number"));
+        let n1 = 0, n2 = 1, nextTerm;
+        console.log("Fibonacci series : ");
+        for(let i = 1; i <= number; i++){
+            console.log(n1);
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+        // Fibonacci Sequence Up to a Certain Number
+
+        const number1 = parseInt(prompt("enter a number"));
+        let a1 = 0, a2 = 1, next;
+        console.log("Fibonacci series are: ");
+        console.log(a1);
+        console.log(a2);
+        next = a1 + a2;
+        while(next <= number1){
+            console.log(next);
+            a1 = a2;
+            a2 = next;
+            next = a1 + a2;
+        }
+        
+
+        
+    </script>
+</body>
+</html>

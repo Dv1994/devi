@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: 'devi',
+            id : 14752319,
+            course : 'webdevelopment',
+            marks: {
+                math : 100,
+                science : 98
+            }
+        };
+        // const clonePerson = Object.assign({}, person);
+        // console.log(clonePerson);
+        // clonePerson.name = 'dora';
+        // console.log(clonePerson.name)
+        // console.log(person.name)
+
+
+        // Clone the Object Using Spread Syntax
+        // const clonePerson = {...person}
+        // console.log(clonePerson);
+        // clonePerson.name = 'Donald do';
+        // clonePerson.marks.physics = 100;
+        // console.log(clonePerson.name);
+        // console.log(person.name);
+
+        // Clone the Object Using JSON.parse()
+        const personJson = JSON.parse(JSON.stringify(person));
+        console.log(personJson)
+
+    </script>
+</body>
+</html>

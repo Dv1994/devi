@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Extract Value Using map()
+        // function extractValue(arr, prop){
+        //     let extractedValue = arr.map(item => item[prop]);
+        //     return extractedValue;
+        // }
+
+
+        // Extract Value Using for Loop
+        function extractValue(arr, prop){
+            let extractedValue = [];
+            for(let i = 0; i < arr.length; i++){
+                extractedValue.push(arr[i][prop]);
+            }
+            return extractedValue;
+        }
+        const person = [{
+            name: "devi",
+            age: 25,
+            state: "ap"
+        },
+        {
+            name: "ravi",
+            age:23,
+            state: "ts"
+        },
+        {
+            name: "prasad",
+            age: 29,
+            state: "ap"
+        }
+    ];
+    const result = extractValue(person, "name");
+    console.log(result);
+    </script>
+</body>
+</html>

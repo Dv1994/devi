@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check Leap Year Using if...else
+        function checkLeapYear(year){
+            if((year % 4 == 0 && year % 100 != 0) || year % 400 ==0){
+                console.log(year + ' is Leap year')
+            }else{
+                console.log(year + ' is not a leap year')
+            }
+
+        }
+        const year = prompt("enter a year");
+        checkLeapYear(year);
+
+        // Check Leap Year Using newDate()
+
+        function checkLeapYear1(year){
+            const leap = new Date(year1, 1, 29).getDate() == 29;
+            if (leap){
+                console.log(year1 + ' leap year')
+            }else{
+                console.log(year1 + " not a leap year")
+            }
+        }
+        const year1 = prompt("enter a year");
+        checkLeapYear1(year1)
+    </script>
+</body>
+</html>

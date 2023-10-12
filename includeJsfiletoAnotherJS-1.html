@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script type="module" src="includeJSfiletoAotherJS.html"></script>
+    <script type="module">
+        // Now you can use the imported modules in this script
+        import { message, number, addingTwoNumbers } from 'includeJSfiletoAotherJS.html';
+
+        console.log(name); 
+        console.log(number); 
+        console.log(addingTwoNumbers(3, 4)); 
+        
+    </script>
+</body>
+</html>

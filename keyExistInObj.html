@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check if Key Exists in Object Using in Operator
+
+        const person = {
+            name: 'Devi',
+            id: 14752319,
+            course: 'webDevelopment'
+        }
+        
+        // const hasKey = 'name' in person;
+
+        // Check if Key Exists in Object Using hasOwnProperty()
+        const hasKey = person.hasOwnProperty('name')
+
+        if(hasKey){
+            console.log("the key exists")
+        }
+        else{
+            console.log("the key does not exists")
+        }
+    </script>
+</body>
+</html>

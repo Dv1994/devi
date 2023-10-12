@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Convert Object to String Using JSON.stringify()
+        const person = {
+            name: "devi",
+            id: 14752319,
+            course: 'web development'
+        };
+        // const result = JSON.stringify(person);
+        // console.log(result);
+
+
+        // Convert Object to String Using String()
+
+        const result1 = String(person);
+        const result2 = String(person['name']);
+        console.log(result1);
+        console.log(result2);
+        console.log(typeof(result1));
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const a = parseInt(prompt("enter a +ve number"));
+        // const b = parseInt(prompt("enter a +ve number"));
+        //  let min = (a > b) ? a : b;
+        //  while(true){
+        //     if(min % a ==0 && min % b == 0){
+        //         console.log(`The LCM of ${a} and ${b} is ${min}`);
+        //         break;
+        //     }
+        //     min++
+        //  }
+
+        //  LCM Calculation Using HCF
+        let hcf;
+        const num1 = parseInt(prompt("enter a +ve number"));
+        const num2 = parseInt(prompt("enter a +ve number"));
+        for(let i = 1; i <= num1 && i <= num2; i++){
+            if(num1 % i == 0 && num2 % i == 0){
+                hcf = i
+            }
+            lcm = (num1 * num2)/hcf;
+        }
+        console.log(`LCM Of ${num1} and ${num2} is ${lcm}`)
+    </script>
+</body>
+</html>

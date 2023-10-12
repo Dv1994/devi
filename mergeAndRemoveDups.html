@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Using concat() and for Loop
+        function getUniqueArr(arr1, arr2){
+            let arr = arr1.concat(arr2);
+            let uniqueArr = [];
+            for (let i of arr){
+                if(uniqueArr.indexOf(i) === -1){
+                    uniqueArr.push(i)
+                }
+            }
+            console.log(uniqueArr);
+        }
+
+        const array1 = [1, 2, 3];
+        const array2 = [3, 4, 5];
+        getUniqueArr(array1, array2);
+
+        // Using Spread Syntax and Set
+        function uniqueArrRemoveDups(arr3,arr4){
+            let arr = [...arr3, ...arr4];
+            let uniqueArrRem = [...new Set(arr)]
+            console.log(uniqueArrRem);
+        }
+        const array3 = [7, 8, 9];
+        const array4 = [8, 10, 7];
+        uniqueArrRemoveDups(array3, array4);
+        
+    </script>
+</body>
+</html>

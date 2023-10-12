@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getRandom(arr){
+            const randomIndex = Math.floor(Math.random() * arr.length);
+            const item = arr[randomIndex];
+            return item;
+        }
+        const array = [1, "devi", 3, "ravi"];
+        const result = getRandom(array);
+        console.log(result);
+    </script>
+</body>
+</html>

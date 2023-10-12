@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //using if...else if...else
+        const number = parseInt(prompt("enter a number"));
+        if(number > 0){
+            console.log("given number is positive");
+        }
+        else if(number == 0 ){
+            console.log("given number is zero");
+        }
+        else{
+            console.log("given number is negative")
+        }
+
+        //using nested if
+        const num = parseInt(prompt("enter a number"));
+        if(num >= 0){
+            if(num == 0){
+                console.log("the given number is zero")
+            }
+            else {
+                console.log("given number is positive");
+            }
+        }
+        else{
+            console.log("given number is negative");
+        }
+    </script>
+</body>
+</html>

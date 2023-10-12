@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a = parseInt(prompt("enter first integer: "));
+        const b = parseInt(prompt("enter second integer: "));
+        const c = parseInt(prompt("enter third integer: "));
+
+        const result1 = a % 10;
+        const result2 = b % 10;
+        const result3 = c % 10;
+
+        if(result1 == result2 && result1 == result3) {
+            console.log(`${a}, ${b}, ${c} have the same last digits`);
+        }
+        else{
+            console.log(`${a}, ${b},${c} have different last digits`);
+        }
+
+    </script>
+</body>
+</html>

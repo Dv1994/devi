@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const operator = prompt("Enter Operator: +,-,*, /");
+
+        // const number1 = parseFloat(prompt("Enter first Number: ")); 
+        // const number2 = parseFloat(prompt("Enter second Number: ")); 
+
+        // let result;
+        // if( operator == '+'){
+        //     result = number1 + number2;
+        // }
+        // else if(operator == '-'){
+        //     result = number1 - number2;
+        // }
+        // else if(operator == '*'){
+        //     result = number1 * number2
+        // }
+        // else{
+        //     result = number1 / number2;
+        // }
+        // console.log(`${number1} ${operator} ${number2} = ${result.toFixed(2)}`);
+
+        //Simple Calculator with switch
+
+        const operator = prompt("Enter Operator: +,-,*, /");
+
+        const number1 = parseFloat(prompt("Enter first Number: "));
+        const number2 = parseFloat(prompt("Enter second Number: "));
+
+        let result;
+        switch (operator) {
+            case '+':
+                result = number1 + number2;
+                console.log(`${number1} ${operator} ${number2} = ${result}`);
+                break;
+            case '-':
+                result = number1 - number2;
+                console.log(`${number1} ${operator} ${number2} = ${result}`);
+                break;
+            case '*':
+                result = number1 * number2;
+                console.log(`${number1} ${operator} ${number2} = ${result}`);
+                break;
+            case '/':
+                result = number1 / number2;
+                console.log(`${number1} ${operator} ${number2} = ${result}`);
+                break;
+            default:
+                console.log('Invalid Operator');
+                break;
+        }
+    </script>
+</body>
+
+</html>

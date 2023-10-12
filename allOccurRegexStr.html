@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Replace All Occurrence of String Using RegEx
+        const string = 'Mr Red has a red house and a red car';
+        const regex = /red /gi;
+        const newText = string.replace(regex, "blue ");
+        console.log(newText);
+
+        // Replace All Occurrence of String Using built-in Method
+
+        const newString = string.split('red').join('blue');
+        console.log(newString);
+    </script>
+</body>
+</html>

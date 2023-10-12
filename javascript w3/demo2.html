@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Demo2</title>
+</head>
+<body>
+    <h2>What can Javascript do</h2>
+    <p>Javascript can change Html Attribute values.</p>
+    <p id="demo2">Javascript can change the style of an HTML element</p>
+    <p id="demo3">Javascript can Hide HTML element</p>
+    <p id="demo4">Javascript can show HTML element</p>
+
+    <button onclick="document.getElementById('myImage').src='images/dance.gif'">Start</button>
+    <img src="images/alien.jpg" id="myImage" style="width: 100px; height: 100px;">
+    <button onclick="document.getElementById('myImage').src='images/alien.jpg'">Stop</button>
+
+    <input type="button" value="Click" onclick="document.getElementById('demo2').style.fontSize='35px'"></input>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Hide</button>
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">display</button>
+</body>
+</html>

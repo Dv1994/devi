@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Add Element to Array Using unshift()
+        // function addElementsStart(arr) {
+        //     arr.unshift(4);
+        //     return arr;
+        // }
+        // const array = [1, 2, 3];
+        // console.log(array);
+        // const result = addElementsStart(array);
+        // console.log(result);
+        
+
+        // Add Element to Array Using splice()
+        // function addElementsStart(arr) {
+        //     arr.splice(0, 0, 4);
+        //     return arr;
+        // }
+        // const array = [1, 2, 3];
+        // console.log(array);
+        // const result = addElementsStart(array);
+        // console.log(result);
+
+        // Add Element to Array Using Spread Operator
+
+        // function addElementsStart(arr) {
+        //     arr = [4, ...arr];
+        //     return arr;
+        // }
+        // const array = [1, 2, 3];
+        // console.log(array);
+        // const result = addElementsStart(array);
+        // console.log(result);
+
+        // Add Element to Array Using concat()
+
+        function addElementsStart(arr) {
+            arr = [4].concat(arr);
+            return arr;
+        }
+        const array = [1, 2, 3];
+        console.log(array);
+        const result = addElementsStart(array);
+        console.log(result);
+
+
+
+    </script>
+</body>
+</html>

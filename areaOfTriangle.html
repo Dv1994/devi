@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of Triangle</title>
+</head>
+<body>
+    <script>
+        //Method-1 when baseValue and height known
+        const baseValue = prompt("enter base value");
+        const height = prompt("enter height value");
+        const areaOfTriangle = (baseValue * height) / 2;
+        console.log(areaOfTriangle);
+
+        //Method-2 when 3 sides are there
+        const side1 =parseInt(prompt("enter a value"));
+        const side2 =parseInt(prompt("enter b value")); 
+        const side3 =parseInt(prompt("enter c value"));
+
+        const s = ((side1 + side2 + side3) / 2);
+        const areaOfTriangle1 =Math.floor(Math.sqrt(s * (s - side1)*(s - side2)*(s - side3)));
+        console.log(areaOfTriangle1);
+
+        //Method-3 using functions
+        function calcAreaOfTriangle(side01,side02,side03){
+            const perimeter = (side01 + side02 + side03) / 2;
+            const area = Math.sqrt(perimeter * (perimeter- side01) * (perimeter - side02) * (perimeter - side03));
+            return area;
+        }
+        const side01 = parseInt(prompt("enter a number"));
+        const side02 = parseInt(prompt("enter a number"));
+        const side03 = parseInt(prompt("enter a number"));
+
+        const area = calcAreaOfTriangle(side01,side02,side03);
+        console.log(`Area of Triangle is : ${area.toFixed(0)}`);
+
+
+    </script>
+</body>
+</html>

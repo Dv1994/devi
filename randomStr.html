@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Generate Random Strings
+
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz';
+        function generateRandom(length) {
+            let result = ' ';
+            const characterLength = characters.length;
+            for (let i = 0; i < length; i++) {
+                result +=characters.charAt(Math.floor(Math.random() * characterLength));
+
+
+                // Generate Random Strings Using Built-in Methods
+                // const result1 = Math.random().toString(36).substring(2, 7);
+                // console.log(result1);
+
+            }
+            return result
+        }
+        console.log(generateRandom(5));
+
+
+    </script>
+</body>
+
+</html>

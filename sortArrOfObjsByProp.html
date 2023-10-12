@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Sort Array by Property Name
+    //     function compareName(a, b){
+    //         const name1 = a.name.toUpperCase();
+    //         const name2 = b.name.toUpperCase();
+    //         let comparison = 0;
+    //         if(name1 > name2){
+    //             comparison = 1;
+    //         }else if(name1 < name2){
+    //             comparison = -1;
+    //         }
+    //         return comparison;  
+    //     }
+    //     const person = [{
+    //         name: "devi",
+    //         age: 29,
+    //         state: "ap"
+    //     },
+    //     {
+    //         name: "ravi",
+    //         age:33,
+    //         state: "ts"
+    //     },
+    //     {
+    //         name: "prasad",
+    //         age: 32,
+    //         state: "ap"
+    //     }
+    // ];
+    // console.log(person.sort(compareName));
+
+    // Sort Array by Property Age
+
+    function compareName(a, b){
+            return a.age - b.age;
+        }
+        const person = [{
+            name: "devi",
+            age: 25,
+            state: "ap"
+        },
+        {
+            name: "ravi",
+            age:23,
+            state: "ts"
+        },
+        {
+            name: "prasad",
+            age: 29,
+            state: "ap"
+        }
+    ];
+    console.log(person.sort(compareName));
+
+
+
+    </script>
+</body>
+</html>

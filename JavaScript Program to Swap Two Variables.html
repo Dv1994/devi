@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program to Swap Two Variables</title>
+</head>
+<body>
+    <script>
+        //Using a Temporary Variable
+        // let a = prompt ("enter a number");
+        // let b = prompt("enter b value");
+
+        // let temp = a;
+        // a = b;
+        // b = temp;
+
+        // console.log(`The value of a is ${a}`);
+        // console.log(`the value of b is ${b}`);
+
+        //Using es6(ES2015) Destructuring assignment
+
+        // let num1 = prompt("enter a number");
+        // let num2 = prompt(" enter b value");
+
+        // [num1, num2] = [num2, num1];
+
+        // console.log(`the value of a:  ${num1}`);
+        // console.log(`the value of b: ${num2}`);
+
+        //Using Arithmetic Operators
+
+        let a = parseInt( prompt ("enter a number"));
+        let b = parseInt( prompt ("enter b number"));
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        console.log(`the value of a : ${a}`);
+        console.log(`the value of b : ${b}`);
+
+
+    </script>
+</body>
+</html>

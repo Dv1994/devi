@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //random number between 0 and 1
+        const a = Math.random()
+        console.log("Random value be " + a);
+
+        //random number between maximum and minimum values
+        const b = Math.floor(Math.random() * (100 - 1) + 1);
+        console.log(`random values between 100 and 1 are ${b}`)
+
+        //Integer Value between Two Numbers (Inclusive)
+        const min = parseInt(prompt("enter min value"));
+        const max = parseInt(prompt("enter a max value"));
+
+        const c =Math.floor( Math.random() * ((max - min)+1) + min);
+        console.log(`random number between ${max} and ${min} is ${c} `);
+    </script>
+</body>
+</html>

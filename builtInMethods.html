@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkString(str) {
+            if (str.startsWith('S') && str.endsWith('T')) {
+                console.log('The string starts with S and ends with T');
+            }
+            else if (str.startsWith("S")) {
+                console.log("the string starts with S but does not end with T");
+            }
+            else if (str.endsWith("T")) {
+                console.log("the string ends with T but does not starts with S")
+            }
+            else {
+                console.log("the string not starts with S and T")
+            }
+        }
+        const string = prompt("enter a string");
+        checkString(string);
+    </script>
+</body>
+
+</html>

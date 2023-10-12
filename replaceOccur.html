@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to replace a character of a string
+
+        const string = 'Mr Red has a red house and a red car';
+        const newText = string.replace('red', 'blue');
+        console.log(newText);
+
+        // Replace Character of a String Using RegEx/
+
+        const string1 = 'Mr Red has a red house and a red car';
+        const RegEx = /red/g;
+        const newText1 = string.replace(RegEx, 'blue');
+        console.log(newText1)
+    </script>
+</body>
+</html>

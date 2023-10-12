@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // program to display fibonacci sequence upto nth term using recursion
+        function fibonacci(num) {
+            if (num < 2) {
+                return num;
+            }
+            else {
+                return fibonacci(num - 1) + fibonacci(num - 2);
+            }
+        }
+
+        // take nth term input from the user
+        const nTerms = prompt('Enter the number of terms: ');
+
+        if (nTerms <= 0) {
+            console.log('Enter a positive integer.');
+        }
+        else {
+            for (let i = 0; i < nTerms; i++) {
+                console.log(fibonacci(i));
+            }
+        }
+    </script>
+</body>
+
+</html>

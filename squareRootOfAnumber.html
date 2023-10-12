@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Root of a Number</title>
+</head>
+<body>
+    <script>
+        //Method-1
+        function squareRoot(number){
+            if(number === 0)
+            return 0;
+            let guess = number;
+            while(true){
+                const newGuess= ((guess + number/guess)/2);
+                if(guess === newGuess){
+                    break;
+                }
+                guess = newGuess;
+            }
+            return guess;
+        }
+        const number = 25;
+        const sQuareRoot = squareRoot(number);
+        console.log(`square root of ${number} is approx: ${sQuareRoot}`);
+
+        //Method-2
+        const num = prompt("enter a number");
+        const result = Math.sqrt(num);
+        console.log(result);
+
+        //Method-3 with different datatypes
+        const num1 = 2.25;
+        const num2 = -5;
+        const num3 = "hello";
+
+        const result1 = Math.sqrt(num1);
+        const result2 = Math.sqrt(num2);
+        const result3 = Math.sqrt(num3);
+        console.log(result1);
+        console.log(result2);
+        console.log(result3);
+
+
+
+    </script>
+</body>
+</html>

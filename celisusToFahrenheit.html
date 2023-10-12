@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celisus to FahrenHeit</title>
+</head>
+<body>
+    <script>
+
+        //cel to fahren
+
+        function convertingFtoC(){
+            const celis = prompt("enter degree of celisus");
+            const fahrenh = Math.floor((celis * 1.8) + 32 );
+            return fahrenh
+        }
+        const fahrenhe = convertingFtoC();
+        console.log(fahrenhe);
+        
+        //Celisus to Fahrenheit
+        const celisus = prompt("enter no.of celisus");
+        const fahrenheit = (celisus * 1.8) + 32;
+        console.log(fahrenheit);
+
+        //Fahrenheit to Celisus
+        const fahren = prompt("enter no.of fahrenheit");
+        const celis = ((fahren-32) * (5/9)).toFixed(2);
+        console.log(celis);
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Find HCF using for Loop
+        let hcf;
+        const number1 = parseInt(prompt("enter a positive number"));
+        const number2 = parseInt(prompt("Enter a positive number"));
+        for (let i = 1; i <= number1 && i <= number2; i++) {
+            if (number1 % i == 0 && number2 % i == 0) {
+                hcf = i;
+            }
+        }
+        console.log(`The hcf of ${number1} and ${number2} is ${hcf}`);
+
+        // HCF using while Loop and if...else
+        // program to find the HCF or GCD of two integers
+
+        // take input
+        let a = prompt('Enter a first positive integer: ');
+        let b = prompt('Enter a second positive integer: ');
+
+        // looping until both numbers are equal
+        while (a != b) {
+            if (a > b) {
+                a -= b;
+            } else {
+                b -= a;
+            }
+        }
+        // display the hcf
+        console.log(`HCF IS ${a}`)
+    </script>
+</body>
+
+</html>

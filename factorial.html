@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = parseInt(prompt("enter a number"));
+        if(number < 1){
+            console.log(`!Error factorial for -ve numbers does not exists`)
+        }
+        else if(number == 0){
+            console.log("the fact of 0 is: 1");
+        }
+        else{
+            let fact = 1;
+            for(let i = 1; i <= number; i++){
+                fact *= i;
+            }
+            console.log(`the factorial of ${number} is: ${fact}`)
+        }
+    </script>
+</body>
+</html>

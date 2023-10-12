@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping of Two numbers</title>
+</head>
+<body>
+    <script>
+        //Method-1 swapping of numbers
+        let a = prompt("enter a number");
+        let b = prompt("enter a number");
+        let temp;
+        temp = a;
+        a = b;
+        b = temp;
+        console.log(`swap of the numbers: ${a} and ${b} `);
+
+
+        //Method-2 Destructuring 
+        let c = prompt("enter a number");
+        let d = prompt("enter a number");
+        [c,d] = [d,c];
+        console.log(`swap of the numbers: ${c} and ${d} `);
+
+        //Method-3 Arithmetic Operations
+        let e = parseInt(prompt("enter a number"));
+        let f = parseInt(prompt("enter a number"));
+        e = e + f;
+        f = e - f;
+        e = e - f;
+        console.log(`swap of the given numbers: ${e} and ${f}`);
+
+        //Method-4 
+        
+    </script>
+</body>
+</html>

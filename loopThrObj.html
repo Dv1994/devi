@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Loop Through Object Using for...in
+        const student = {
+            name: 'devi',
+            id: 14752319,
+            course: 'webdevelopment'
+        };
+        // for(let key in student){
+        //     let value;
+        //     value = student[key];
+        //     console.log(key + '-' + value);
+        // }
+
+
+        // inheriting property
+        // const person = {
+        //     institute : 'NARESH IT'
+        // }
+        // student.__proto__ = person;
+        // for(let key in student){
+        //     let value;
+        //      value = student[key];
+        //      console.log(key + '-' + value);
+        // }
+        // console.log(student.institute) 
+        
+        
+        // Loop Through Object Using Object.entries and for...of
+        for(let [key, value] of Object.entries(student)){
+            console.log(key + '|' + value);
+        }
+
+        
+
+    </script>
+</body>
+</html>

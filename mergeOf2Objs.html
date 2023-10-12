@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Merge Property of Two Objects Using Object.assign()
+        const student = {
+            name: 'devi',
+            id:14752319,
+            gender: 'female'
+        };
+        const person = {
+            course: 'webDevelopment'
+        };
+        // const newObj = Object.assign(student, person);
+        // console.log(newObj);
+
+        // Merge Property of Two Objects Using Spread Operator
+        const newObj = {...student, ...person}
+        console.log(newObj);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //using if...else
+        const number = parseInt(prompt("enter a  number"));
+        if(number % 2 == 0){
+            console.log("given number is even")
+        }
+        else{
+            console.log("given number odd")
+        }
+        //using ternary operator
+        const num = parseInt(prompt("enter a number"));
+        const result = (num % 2 == 0) ? "even" : "odd";
+        console.log(`the given number is ${result}`)
+    </script>
+</body>
+</html>

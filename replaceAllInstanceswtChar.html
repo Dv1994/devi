@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Replace All Instances Of a Character Using Regex
+
+        const string = prompt("enter a string");
+        const result = string.replace(/a/g , "A");
+        console.log(result);
+
+
+        // Replace All Instances Of Character Using Built-in Methods
+
+        const string1 = prompt("enter a string");
+        const splitStr = string1.split('a');
+        const result1 = splitStr.join("A");
+        console.log(result1);
+
+    </script>
+</body>
+</html>

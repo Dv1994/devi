@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Append Object to Array Using push()
+
+        function appendObjToArr(arr,obj){
+            arr.push(obj);
+            console.log(arr);
+        }
+        let arr = [1,2,3,4,5];
+        let obj = {
+            name:'devi',
+            gender: 'female'
+        };
+        appendObjToArr(arr, obj);
+
+        // Append Object to Array Using splice()
+
+        function appendObjToArr1(arr1,obj1){
+            let index = arr1.length;
+            arr1.splice(index, 0 , obj1);
+            console.log(arr1);
+        }
+        let arr1 = [1,2,3,4,5];
+        let obj1 = {
+            name:'devi',
+            gender: 'female'
+        };
+        appendObjToArr1(arr1, obj1);
+
+        // Append Object Using Spread Operator
+        
+        function appendObjToArr2(arr2,obj2){
+            array = [...arr2, obj2];
+            console.log(array);
+            
+        }
+        let arr2 = [1,2,3,4,5];
+        let obj2 = {
+            name:'devi',
+            gender: 'female'
+        };
+        appendObjToArr2(arr2, obj2);
+    </script>
+</body>
+</html>

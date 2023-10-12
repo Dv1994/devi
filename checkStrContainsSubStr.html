@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check String with includes()
+        const string = prompt("enter a string");
+        const checkStr = prompt("enter a string to check");
+        if(string.includes(checkStr)){
+            console.log(`string contains substring ${checkStr}`);
+        }
+        else{
+            console.log(`string doesn't contain substring ${checkStr}`)
+        }
+
+        // Check String with indexOf()
+        const string1 = prompt("enter a string");
+        const strToCheck = prompt("enter a string to check");
+        if(string1.includes(strToCheck) !== -1){
+            console.log(`the string contains ${strToCheck}`);
+        }else{
+            conosle.log(`the string doesn't contains ${strToCheck}`)
+        }
+    </script>
+</body>
+</html>
