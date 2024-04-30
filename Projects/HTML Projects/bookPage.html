@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 80px 40px;
+    }
+
+    .leftContent {
+        border: 1px solid black;
+        width: 40px;
+        height: auto;
+        background-color: black;
+    }
+
+    .leftContent .rightContent {
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    .middleContent {
+        text-align: center;
+        background-color: rgb(158, 157, 159);
+    }
+
+    .second-row {
+        text-align: right;
+        grid-column: 2;
+        padding-right: 10px;
+        margin-top: 5px;
+
+
+    }
+
+    .small-content {
+        border: 1px solid black;
+        padding: 5px 25px;
+        font-size: 14px;
+    }
+
+    .content,
+    .content-1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        text-align: justify;
+        text-align-last: center;
+        padding: 15px 15px 0px 15px;
+    }
+
+    .content-1 {
+        padding-top: 1px;
+    }
+
+    .grid-1,
+    .grid-2 {
+        grid-row: 1;
+    }
+
+    .grid-3,
+    .cont {
+        grid-column: 3;
+        background-color: rgb(221, 217, 217);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 30px;
+    }
+
+    .cont {
+        font-size: 40px;
+        background-color: gray;
+
+    }
+    .thick-hr {
+    border: 2px solid black; /* Adjust the thickness and color as needed */
+    margin: 20px 0; /* Optional: Add margin for spacing */
+}
+</style>
+
+<body>
+    <hr class="thick-hr">
+    <div class="container">
+        <div class="leftContent">
+            ---left
+        </div>
+        <div class="middleContent">
+            <h1>Do</h1>
+        </div>
+        <div class="rightContent">
+            <img src="Public/img1.jpg" alt="about-chiru" width="150" height="100">
+        </div>
+        <div class="second-row">
+            Chiranjeevi
+        </div>
+    </div>
+    <div class="small-content">
+        Padmabhushan Dr. Chiranjeevi is the most popular film actor turned politician in Andhra Pradesh. His fans call
+        him Megastar and Annayya. He was born on August 22, 1955 at Narasapur, in AndhraPradesh. He made his debut into
+        Tollywood with the movie <em><b>Punadirallu</b></em> . He became No.1 celebrity in AndharaPradesh.
+    </div>
+    <div class="content">
+        <div class="grid-1">
+            People like him very much because he <em><b>does</b></em> everything sincerly. Young people adore him because he inspires
+            them with his words and voice. Elders respect him very much because he sincerely <em><b>does</b></em> social service. His co
+            artists support him a lot as he honestly encourages them. People love him a lot because he <em><b>does</b></em> maintain
+            punctuality, sincerity and discipline. People believe him more than anything because he keeps his word. He
+            lives in the hearts of the people forever as he honestly shows his concern towards the poor and needy. He
+            does challenge the situations because he strongly believes himself. He <em><b>doesn't </b></em>hurt anybody with his words
+            and voice, as he knows the value of them. He does make miracles happen with the love and affection that he
+            gets from across the world.
+        </div>
+        <div class="grid-2">
+            He started his career in a humble way and became the megastar and ruled the Telugu film industry fro
+            over a decade. He became a role model to many heroes with his splendid acting and sincere behaviour. He
+            <em><b>did</b></em> learn a lesson from every failure and became successful person in his personal, professional and
+            social life. He started Chiranjeevi blood and eye bank on October2, 1998 through which he saved a good
+            number of lives. He voluntarily participated in various social service activities and thus motivated the
+            youth in particular. These activities earned him a lot of name and afame across the globe. He <em><b>did</b></em> win
+            the prestigious award Padmabhushan for his outstanding contribution in his personal and professional
+            life. He directly entered into the lives of the people by launching a political party Praja Rajyam on
+            August 26, 2008 at Tirupathi.
+        </div>
+        <div class="grid-3">
+            Primary
+        </div>
+    </div>
+    <div class="content-1">
+        <div class="cont">Do</div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <hr class="thick-hr">
+
+</body>
+
+</html>

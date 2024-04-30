@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Of Objects</title>
+</head>
+<body>
+    <script>
+        let arr=[
+            { name: "Alice", age: 21, status: true },
+            { name: "Max", age: 20, status: true },
+            { name: "Jane", age: 20, status: true },
+            { name: "Dave", age: 20, status: false },
+            { name: "Caroline", age: 19, status: true },
+            { name: "White", age: 19, status: true },
+            { name: "Green", age: 19, status: false },
+        ]
+        let result = new Set();
+        let obj ={};
+        for(let i = 0; i < arr.length; i++){
+            result.add(arr[i].age);
+        }
+        result.forEach((i) => {
+            const arr1 = arr.filter((x) =>{
+                if(x.age == i)
+                return x.status == true;
+        }).map((x) => {
+            delete x.status;
+            return x;
+        })
+            obj[i] = arr1;
+        })
+        console.log(obj)
+
+    </script>
+</body>
+</html>

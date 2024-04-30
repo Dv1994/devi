@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: row; /* Column layout for the container */
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        h2 {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -50px;
+            z-index: 1;
+            font-size: 36px;
+            color: #ffb108;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 100;
+        }
+
+        .content-row {
+            width: 10%;
+            padding: 35px 0px 19px 0px; /* Adjusted padding for the content row */
+            margin: 0px 20px;
+        }
+
+        .slider-row {
+            background-color: blueviolet;
+            padding: 35px 0px 19px 52px; /* Adjusted padding for the slider row */
+        }
+
+        .slider {
+            flex: 1 1 100%; /* Take full width */
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.5s ease;
+        }
+
+        .nav-column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+
+        }
+
+        .slides img {
+            flex: 0 0 auto;
+            width: 33%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .nav-column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            cursor: pointer;
+            z-index: 2;
+            color: black;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row content-row">
+            <h2>Fantastic <br/> Finds</h2>
+        </div>
+        <div class="row slider-row">
+            <div class="slider">
+                <div class="slides">
+                    <img src="./public/sec1.jpg" alt="_blank">
+                    <img src="./public/sec2.jpg" alt="_blank">
+                    <img src="./public/sec3.jpg" alt="_blank">
+                    <img src="./public/sec2.jpg" alt="_blank">
+                    <img src="./public/sec5.jpg" alt="_blank">
+                    <img src="./public/sec6.jpg" alt="_blank">
+                </div>
+                <div class="nav-column">
+                    <div class="prev" onclick="prevSlide()">❮</div>
+                    <div class="next" onclick="nextSlide()">❯</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const slidesCount = slides.children.length;
+        const slideWidth = slides.clientWidth / 6;
+
+        function showSlides() {
+            slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+            if (slideIndex === slidesCount - 1) {
+                slides.style.transition = 'none';
+                slideIndex = -1;
+            }
+            slideIndex++;
+            showSlides();
+            slides.style.transition = 'transform 0.5s ease';
+        }
+
+        function prevSlide() {
+            if (slideIndex === 0) {
+                slides.style.transition = 'none';
+                slideIndex = slidesCount;
+            }
+            slideIndex--;
+            showSlides();
+            slides.style.transition = 'transform 0.5s ease';
+        }
+
+        window.addEventListener('resize', function () {
+            slideIndex = 0;
+            showSlides();
+        });
+
+        // Auto slide
+        setInterval(function() {
+            nextSlide();
+        }, 3000); // Adjust the interval as needed (here it's set to 3 seconds)
+
+        showSlides();
+    </script>
+
+</body>
+
+</html>

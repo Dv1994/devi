@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.scrollingTextCont{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #623552;
+    max-width: 100%;
+    color: #ffb108;
+}
+.scrollingTextCont span{
+    background-color: #ffb108;
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    padding: 8px;
+    color: #623552;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    font-weight: 600;
+    width: 100px;
+}
+@media (max-width:768px) {
+    .scrollingTextCont span{
+        display: none;
+    }
+    .scrollingTextCont{
+        padding: 10px;
+    }
+}

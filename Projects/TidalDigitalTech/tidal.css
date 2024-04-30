@@ -1,0 +1,173 @@
+h2,
+h6 {
+    text-align: left;
+    text-decoration: wavy;
+    font-style: oblique;
+    font-size: smaller;
+    font-family: cursive;
+    margin-left: 50px;
+    color: rgb(9, 9, 232);
+}
+
+h2 {
+    font-size: large;
+}
+
+.brand-logo img {
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.navbar {
+    border-top: 5px solid rgb(71, 120, 234);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.brand-logo {
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.brand-subtitle {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.helpline {
+    position: absolute;
+    right: 100px;
+    top: 5px;
+    color: red;
+}
+
+.navbar-container {
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    width: 400px;
+    height: 400px;
+}
+
+.carousel-caption {
+    top: 80px;
+    left: 0;
+    right: auto;
+    text-align: left;
+}
+
+.align-left h1 {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding: 5px;
+    font-size: 48px;
+    margin-top: -10px;
+}
+
+.carousel {
+    margin-top: 50px;
+}
+
+.align-right h1 {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    padding: 5px;
+    font-size: 48px;
+    margin-top: -10px;
+}
+
+.custom-row-margin {
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+.card-body h5 {
+    color: red;
+    font-size: 16px;
+
+}
+
+a.col {
+    color: transparent;
+    text-decoration: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 40px;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+.sub-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding: 20px;
+
+}
+
+.cards h3 {
+    text-align: center;
+}
+
+.cards img {
+    border-radius: 50%;
+}
+
+.faqs-cont {
+    margin-top: 30px;
+    box-shadow: 1px 1px 5px 1px steelblue;
+}
+
+.footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1;
+    max-width: calc(25% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.item ul li {
+    list-style: none;
+}
+
+.item h5 {
+    text-decoration: underline;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-link svg {
+    margin-left: 30px;
+    text-decoration: none;
+}

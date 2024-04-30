@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-y: hidden;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #623552;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar a .navbar-link {
+      float: left;
+      font-size: 16px;
+      color: #ffb108;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar-link {
+      padding: 14px 16px;
+      color: #ffffff;
+      text-decoration: none;
+
+    }
+
+    .navbar-link:hover {
+      background-color: #ffb108;
+    }
+
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font: inherit;
+      margin: 0;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #ffb108;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      color: #623552;
+      width: 100%;
+      left: 0;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #623552;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      /* width:25%; */
+      padding: 10px;
+      /* background-color: #623552; */
+      height: 350px;
+
+    }
+
+    .column a {
+      float: none;
+      color: #ffffff;
+      padding: 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .column a:hover {
+      /* background-color: #ffb108; */
+      border-bottom: 1px solid #ffb108;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Women
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column">
+            <h3>Ethnic Wear</h3>
+            <a href="#">Kurtas</a>
+            <a href="#">Kurthi</a>
+            <a href="#">Jackets</a>
+            <a href="#">Saree's & Blouses</a>
+            <a href="#">Pants, Palazzos & Skirts</a>
+
+          </div>
+          <div class="column">
+            <h3>Western Wear</h3>
+            <a href="#">Jump Suits</a>
+            <a href="#">Tops, Shirts, Tunics</a>
+          </div>
+          <div class="column">
+            <h3>Jewellery</h3>
+            <a href="#">Jumkas</a>
+            <a href="#">Chains</a>
+            <a href="#">Chokers</a>
+          </div>
+          <div class="column">
+            <h3>Footwear</h3>
+            <a href="#">Shoes</a>
+            <a href="#">Sandals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Men
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column">
+            <h3>Ethnic Wear</h3>
+            <a href="#">Kurtas</a>
+            <a href="#">Nehru Jackets</a>
+            <a href="#">Indian Sets</a>
+          </div>
+          <div class="column">
+            <h3>Western Wear</h3>
+            <a href="#">Shirts</a>
+            <a href="#">Pants</a>
+            <a href="#">T-Shirs</a>
+            <a href="#">Jeans</a>
+          </div>
+          <div class="column">
+            <h3>Footwear</h3>
+            <a href="#">Casual Shoes</a>
+            <a href="#">Party Wear</a>
+            <a href="#">Loafers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Kids
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column">
+            <h3>Boy's Wear</h3>
+            <a href="#">Ethnic Wear</a>
+            <a href="#">Kurtas</a>
+            <a href="#">Jackets</a>
+          </div>
+          <div class="column">
+            <h3>Girl's Wear</h3>
+            <a href="#">Traditional Wear</a>
+            <a href="#">Western Wear</a>
+            <a href="#">Ethnic Wear</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Home Furnishing
+      </button>
+      <div class="dropdown-content">
+        <div class="row">
+          <div class="column">
+            <h3>BedRoom Linen</h3>
+            <a href="#">BedSheets</a>
+            <a href="#">Bed Pillows</a>
+            <a href="#">Blankets & Quilts</a>
+            <a href="#">Cushion Covers</a>
+            <a href="#">Cushions</a>
+          </div>
+          <div class="column">
+            <h3>Curtains & Carpets</h3>
+            <a href="#">Curtains</a>
+            <a href="#">Carpets</a>
+            <a href="#">Doormats</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="navbar-link">Hub Family</a>
+  </div>
+
+
+
+</body>
+<div style="width: 100%; overflow-x: hidden;">
+  <iframe src="homeSlideshow.html" style="width: 100%; height: 100vh; border: none;"></iframe>
+</div>
+</html>

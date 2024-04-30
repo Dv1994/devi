@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatRoom</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="response.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat-header">
+        <div class="logo">
+          <img src="public/chatbot2.png" alt="chatbot" />
+          <div class="options-menu" id="optionsMenu">
+            <a href="#" onclick="handleOptionClick('Option 1')">search</a>
+            <a href="#" onclick="handleOptionClick('Option 2')">Contacts</a>
+            <a href="#" onclick="handleOptionClick('Option 3')">Log Out</a>
+        </div>
+        </div>
+        <div class="title">Chat Room...</div>
+        <div class="calling-icon" onclick="startCall()">
+          <img src="public/calling.png" alt="call" />
+        </div>
+      </div>
+      
+      <div class="chat-body"></div>
+      <div class="chat-input">
+        <div class="input-sec">
+          <input type="text" id="txtInput" placeholder="Type here" autofocus />
+        </div>
+        <div class="send">
+          <img src="public/send.svg" alt="send" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

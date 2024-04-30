@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            /* height: 100vh; */
+            background-image: url(../public/rBG.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        form {
+            background-color: #313131;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            flex-direction:column;
+            margin-left: auto;
+            /* margin-right: 50px; */
+            /* margin-top: 100px; */ 
+        }
+        form h3{
+            color:#FDB515;
+            text-align: center;
+        }
+
+        label {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #e1ad01;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Registration Form</h3><hr>
+    
+
+    <form>
+        
+        <label for="firstname">First Name:</label>
+        <input type="text" id="frstname" name="frstname" required>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="Contact">Contact:</label>
+        <input type="number" id="cont" name="cont" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+    </form>
+    </div>
+
+</body>
+</html>

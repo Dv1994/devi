@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove duplicates and places</title>
+</head>
+<body>
+    <script>
+   function findOcc(data, key){
+      let data2 = [];
+        
+      data.forEach((x)=>{
+           
+        // Checking if there is any object in data2
+        // which contains the key value
+         if(data2.some((val) => { 
+            return val[key] == x[key] 
+        })){
+         // If yes! then increase the occurrence by 1
+           data2.forEach((k) => {
+             if(k[key] === x[key]){ 
+               k["occurrence"]++
+             }
+        })
+             
+        }else{
+           // If not! Then create a new object initialize 
+           // it with the present iteration key's value and 
+           // set the occurrence to 1
+           let a = {}
+           a[key] = x[key]
+           a["occurrence"] = 1
+           data2.push(a);
+         }
+      })
+        
+      return data2
+    }
+      
+    let data = [23,121,4215353,626,6,312,42,165,6245,5,3,12,1,1,12,2,2,2,4,4,4,5,5,6];  
+    
+      
+    let key = "occurrence"
+    console.log(findOcc(data, key))
+
+    </script>
+    
+</body>
+</html>

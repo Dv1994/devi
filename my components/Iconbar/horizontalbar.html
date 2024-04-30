@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .iconBar{
+        background-color: chocolate;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: flex-end;
+        padding: 10px;
+    }
+    .iconBar a{
+        padding: 10px;
+        color: black;
+        font-size: 30px;
+    }
+    .iconBar a:hover{
+        background-color: bisque;
+        color: crimson;
+    }
+   .active{
+        background-color: chartreuse;
+    }
+    @media (max-width:768px) {
+        .iconBar{
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+    }
+</style>
+<body>
+    <div class="iconBar">
+        <a href="#" class="active"><i class="bi bi-house"></i></a>
+        <a href="#"><i class="bi bi-person-circle"></i></a>
+        <a href="#"><i class="bi bi-bag-check"></i></a>
+    </div>
+</body>
+</html>

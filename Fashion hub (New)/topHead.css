@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.top-headerCont {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dddddd;
+    z-index: 1000;
+    /* Set a high z-index to ensure it appears above other content */
+}
+
+.sidenav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #623552;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffb108;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+.topBtns{
+    border: none;
+    font-size: 14px;
+    background-color: #623552;
+    display: block;
+    margin: 30px auto;
+}
+
+.leftCont .midCont .rightCont {
+    display: flex;
+    align-items: center;
+}
+
+.midCont img {
+    display: block;
+    margin: 0 auto;
+}
+
+.leftCont {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Align items vertically */
+    padding-left: 20px;
+}
+
+.leftCont div {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #623552;
+}
+
+.location,
+.menu {
+    margin-right: 10px;
+    /* Add some space between the two divs */
+}
+
+.rightCont {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Align items vertically */
+    padding-right: 20px;
+}
+
+.rightCont a {
+    padding-right: 20px;
+    color: #623552;
+    font-size: 20px;
+    
+}
+
+@media (max-width: 767px) {
+    .rightCont a:nth-child(2) {
+        display: none;
+        /* Hide the second <a> element in rightCont */
+    }
+
+    .rightCont a {
+        font-size: 15px;
+    }
+
+    .midCont img {
+        width: 90px;
+        height: 50px;
+    }
+
+    .leftCont {
+        padding-left: 8px;
+    }
+
+    .rightCont {
+        padding-right: 8px;
+    }
+}
+
+.dropbtn {
+    color: #623552;
+    padding: 2px;
+    font-size: 16px;
+    border: none;
+}
+
+.location {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dddddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #623552;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    
+}
+.dropdown-content a:hover{
+    border-bottom: 1px solid #623552;
+}
+.dropdown-content a:nth-child(2){
+    border-bottom: none;
+}
+
+
+
+.location:hover .dropdown-content {
+    display: block;
+}
+
+.location:hover .dropbtn {
+    background-color: #ddd;
+}
+
+#desktopOnly {
+    display: none;
+}
+
+/* Media query for desktop screens */
+@media (min-width: 768px) {
+    #desktopOnly {
+        display: block;
+    }
+}
+.accordion {
+    background-color: #623552;
+    color: #ffb108;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #623552;
+  }
+  
+  .accordion:after {
+    content: '\25BC';
+    color: #ffb108;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\25B2";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #623552;
+    color: #ffb108;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .login-register {
+    white-space: nowrap; /* Prevent line breaks */
+    margin-bottom: 30px;
+}
+
+.login-register .topLink,
+.login-register .divider {
+    display: inline;
+    vertical-align: middle;
+}
+
+.divider {
+    margin: 0 1px; /* Adjust spacing as needed */
+    color: #ffb108; /* Color of the line */
+}
+
+  

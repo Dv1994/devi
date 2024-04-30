@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Slide Show</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* overflow-y: hidden; */
+        }
+
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            /* margin: auto; */
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            padding: 8px 12px;
+            position: absolute;
+            left: 100px;
+            /* Position text on the left side */
+            top: 50%;
+            /* Center vertically */
+            transform: translateY(-50%);
+            /* Center vertically */
+
+        }
+
+        .text h1 {
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .text p {
+            font-size: 15px;
+        }
+
+        .text button {
+            background-color: #623552;
+            color: #ffb108;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 25px;
+        }
+
+        .text button:hover {
+            background-color: #ffb108;
+            color: #623552;
+        }
+
+        @media (max-width:768px) {
+            .text {
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 8px;
+            }
+
+            .text h1 {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            .text p {
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+
+            .text button {
+                margin-top: 5px;
+                padding: 4px 6px;
+                font-size: 5px;
+            }
+
+            .slideshow-container .prev,
+            .slideshow-container .next {
+                margin-top: -20px;
+                /* Adjust the margin-top for smaller screens */
+                padding: 5px;
+                /* Adjust the padding for smaller screens */
+                font-size: 16px;
+                /* Adjust the font-size for smaller screens */
+            }
+
+            .slideshow-container .mySlides {
+                margin-bottom: -20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .dot {
+                height: 8px !important;
+                width: 8px !important;
+            }
+        }
+
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #623552;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #ffb108;
+        }
+
+        .slideshow-container .mySlides {
+            margin-bottom: -10px;
+        }
+
+        /* Navigation arrows */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #ffb108;
+            background-color: #623552;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: #ffb108;
+            color: #623552;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade ">
+            <img src="./public/ban1.jpg" style="width:100%; height:100%">
+            <div class="text">
+                <h1>Sale <br />Upto <br />50% OFF</h1>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="public/ban2.jpg" style="width:100%; height: 100%;">
+            <div class="text">
+                <h1>Indian <br /> Summer</h1>
+                <p>Ethnic Wear 24</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./public/ban3.jpg" style="width:100%; height: 100%;">
+            <div class="text">
+                <h1>Bring Sunshine <br /> Home</h1>
+                <p>Furniture for Summer</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (slideIndex >= slides.length) { slideIndex = 0 }
+            if (slideIndex < 0) { slideIndex = slides.length - 1 }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+        }
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        showSlides();
+        setInterval(function () {
+            plusSlides(1);
+        }, 2000);
+    </script>
+</body>
+
+</html>

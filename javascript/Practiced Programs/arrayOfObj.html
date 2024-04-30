@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array of objects</title>
+</head>
+<body>
+    <script>
+        
+        const arr=[
+            { name: "Alice", age: 21, status: true },
+            { name: "Max", age: 20, status: true },
+            { name: "Jane", age: 20, status: true },
+            { name: "Dave", age: 20, status: false },
+            { name: "Caroline", age: 19, status: true },
+            { name: "White", age: 19, status: true },
+            { name: "Green", age: 19, status: false },
+        ];
+        let result = new Set();
+        const obj={};
+
+        for(let i = 0; i < arr.length; i++){
+            result.add(arr[i].age);
+        }
+        result.forEach((i) =>{
+        const arr1 = arr.filter((x)=>{
+                if(x.age == i)
+                return x.status == true;
+        }).map((x)=>{
+            delete x.status;
+            return x;
+        })    
+            obj[i]=arr1;
+        })
+        console.log(obj);
+        
+        /*let result = people.filter(people => people.status == true);
+        let temp={}
+        console.log(result)*/
+/*const output=people.reduce((acc,curr)=>{
+  if(acc[curr.age]&&curr.status){
+     let temp_obj={}
+     temp_obj.name=curr.name
+     temp_obj.age=curr.age
+     acc[curr.age].push(temp_obj)
+  }
+  else if(!acc[curr.age]&&curr.status){
+    acc[curr.age]=[]
+    let temp_obj={}
+     temp_obj.name=curr.name
+     temp_obj.age=curr.age
+     acc[curr.age].push(temp_obj)
+  }
+  return acc
+},{})*/
+
+    </script>
+    
+</body>
+</html>

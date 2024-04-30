@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = [
+
+        {min: 1, max: 12},
+
+        {min: 1, max: 2},
+
+        {min: 0, max: 1},
+
+        {min: 12, max: 24},
+
+        {min: 6, max: 22},
+
+        ];
+        const sortedArray = array.sort((a, b) => b.max - a.max);
+
+        console.log(sortedArray);
+    </script>
+</body>
+</html>

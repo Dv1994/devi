@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Rancho");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
+body{
+    background-color: #36454F;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Rancho', serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: #686A6C;
+    color: white;
+}
+nav ul li{
+    padding: 0 20px;
+}
+.logo img{
+    width: 40px;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.container{
+    min-height: 100vh;
+    background-color: #2C3539;
+    color: ivory;
+    font-family: "EB Garamond", sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 20px;
+    padding: 30px;
+    background-image: url("Public/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px 600px;
+    background-position: left;
+    justify-content: end;
+}
+/* .bottom{
+    position: sticky;
+    bottom: 0px;
+    height: 100px;
+    background-color: #686A6C;
+    color: ivory;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+/* #myProgressBar{
+    width: 70vw;
+    cursor: pointer;
+} */
+.songItemContainer{
+    margin-top: 70px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: ivory;
+    color: #0C090A;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}

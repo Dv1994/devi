@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    color: whitesmoke;
+}
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{  
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    background-color: #444;
+    max-width: 100%;
+}
+.logo-cont img{
+    max-width: 80px;
+
+}

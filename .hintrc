@@ -12,6 +12,12 @@
         ]
       }
     ],
-    "detect-css-reflows/composite": "off"
+    "detect-css-reflows/composite": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
   }
 }
